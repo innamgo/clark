@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="app-container">
         <!-- Sidebar: Database Schema -->
         <aside class="sidebar">
             <div class="sidebar-header">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
                     <h2 style="margin-bottom: 0;">Data Sources</h2>
                     <button class="icon-btn primary" id="btn-add-source" title="Add Data Source">+</button>
                 </div>
@@ -28,7 +31,7 @@
         <!-- Main Query Builder Area -->
         <main class="builder-area">
             <header class="builder-header">
-                <h1>Untitled Query</h1>
+                <h1>발송 대상자 세그멘테이션</h1>
                 <div class="header-actions">
                     <button class="btn btn-secondary" id="btn-clear">Clear</button>
                     <button class="btn btn-primary" id="btn-run">Run Query</button>
@@ -162,9 +165,12 @@
                 <div class="form-group">
                     <label style="display: flex; justify-content: space-between; align-items: center;">
                         <span style="color:red">Mock Features: </span> Table Schema (JSON)
-                        <button class="btn btn-secondary" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;" id="btn-load-sample">Load Sample JSON</button>
+                        <button class="btn btn-secondary" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;"
+                            id="btn-load-sample">Load Sample JSON</button>
                     </label>
-                    <textarea id="source-schema-json" rows="6" style="width: 100%; padding: 0.5rem; border: 1px solid var(--border-color); border-radius: var(--radius-md); font-family: monospace; font-size: 0.75rem;" placeholder='[{"name":"Table1","columns":[{"name":"id","type":"integer"}]}]'></textarea>
+                    <textarea id="source-schema-json" rows="6"
+                        style="width: 100%; padding: 0.5rem; border: 1px solid var(--border-color); border-radius: var(--radius-md); font-family: monospace; font-size: 0.75rem;"
+                        placeholder='[{"name":"Table1","columns":[{"name":"id","type":"integer"}]}]'></textarea>
                 </div>
             </div>
             <div class="modal-footer">
@@ -176,4 +182,5 @@
 
     <script src="app.js?v=20240325b"></script>
 </body>
+
 </html>
